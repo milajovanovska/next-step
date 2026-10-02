@@ -1,13 +1,14 @@
 {
-  "name": "next-step",
+  "name": "nextstep",
   "private": true,
+  "version": "0.1.0",
+  "description": "NEXTSTEP, твојата платформа за навигација низ студии и кариера",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "dev:web": "npm run dev --workspace web",
+    "dev:api": "npm run dev --workspace api"
   }
 }
